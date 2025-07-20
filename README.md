@@ -5,6 +5,7 @@ This project contains E2E test for a saucedemo application, using Playwright wit
 
 ## Technologies Used
 
+
 - **Playwright**
 - **TestNG**
 - **Java**
@@ -12,10 +13,12 @@ This project contains E2E test for a saucedemo application, using Playwright wit
 
 ## Design Patterns
 
+
 - **Page Object Model **
 - **Fluent Interface**
   
 
 ## Clong Repository
+
 
 git clone https://github.com/avtandilzabakhidze/Assignment2.git
