@@ -8,5 +8,4 @@ public class Constants {
             NUMBER = "2",
             USER_NAME = "standard_user",
             PASSWORD = "secret_sauce";
-
 }

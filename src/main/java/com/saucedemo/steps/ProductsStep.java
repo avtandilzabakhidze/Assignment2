@@ -32,7 +32,6 @@ public class ProductsStep {
         return this;
     }
 
-
     public ProductsStep cardCountIsCorrect(String cardCount) {
         String cartProductCount = productsPage.getCartProductCount();
 
@@ -44,5 +43,9 @@ public class ProductsStep {
         productsPage.openCart();
 
         return this;
+    }
+
+    public List<String> getProductsWithQuantity(int numberOfProducts) {
+        return productsPage.getAllProductNames().subList(0, numberOfProducts);
     }
 }

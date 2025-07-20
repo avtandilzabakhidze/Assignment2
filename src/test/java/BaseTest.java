@@ -1,6 +1,8 @@
 import com.microsoft.playwright.*;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import static com.saucedemo.data.Constants.BASE_URL;
 
@@ -15,7 +17,6 @@ public class BaseTest {
         playwright = Playwright.create();
         BrowserType.LaunchOptions launchOptions = new BrowserType.LaunchOptions();
         launchOptions.setHeadless(false);
-//        launchOptions.setSlowMo(1000);
         browser = playwright.chromium().launch(launchOptions);
         browserContext = browser.newContext();
         page = browserContext.newPage();

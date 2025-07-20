@@ -4,9 +4,6 @@ import com.saucedemo.steps.ProductsStep;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 import static com.saucedemo.data.Constants.*;
 
 public class ProductsCheckoutTest extends BaseTest {
@@ -22,11 +19,11 @@ public class ProductsCheckoutTest extends BaseTest {
     }
 
     @Test
-    public void testAddMultipleProductsAndCheckout() {
-        List<String> list = Arrays.asList("Sauce Labs Backpack", "Sauce Labs Bike Light");
+    public void addTwoMultipleProductsAndCheckout() {
         loginStep.login(USER_NAME, PASSWORD);
+
         productsStep.validateProductPageIsOpen()
-                .addMultipleProductsToCart(list)
+                .addMultipleProductsToCart(productsStep.getProductsWithQuantity(2))
                 .cardCountIsCorrect(NUMBER)
                 .openCart();
 

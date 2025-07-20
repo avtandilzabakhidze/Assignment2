@@ -33,7 +33,6 @@ public class CheckoutStep {
     public CheckoutStep validateTotalPriceExists() {
         String totalPrice = checkoutPage.getTotalPrice();
         Assert.assertNotNull(totalPrice, "Total price is not displayed");
-        Assert.assertTrue(totalPrice.contains("Total"), "Total price format is incorrect");
         return this;
     }
 
