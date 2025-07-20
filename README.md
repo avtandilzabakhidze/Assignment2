@@ -28,3 +28,11 @@ The tests cover common user journeys such as: logging in, adding products to the
 
 
 git clone https://github.com/avtandilzabakhidze/Assignment2.git
+
+
+
+
+## Limitations & Improvements
+
+The site does not have a product search feature, which limits user navigation and quick product finding.
+It is not possible to select more than one quantity of a product directly from the product page or the cart page, restricting user flexibility in shopping.
