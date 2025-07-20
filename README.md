@@ -24,7 +24,7 @@ The tests cover common user journeys such as: logging in, adding products to the
 - **Fluent Interface**
   
 
-## Clong Repository
+## Clone Repository
 
 
 git clone https://github.com/avtandilzabakhidze/Assignment2.git
@@ -50,18 +50,17 @@ Check checkout process: field validations.
 
 
 3. Test Environment
-   
 Devices: Windows 11
 Browsers: Chrome
 
-5. Approach
+4. Approach
 Automated E2E tests with Playwright + Java + TestNG
 
 Use Page Object Model and Fluent Interface
 
 Test positive and negative
 
-6. Limitations & Improvements
+5. Limitations & Improvements
 
 The site does not have a product search feature, which limits user navigation and quick product finding.
 
