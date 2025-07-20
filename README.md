@@ -14,7 +14,7 @@ This project contains E2E test for a saucedemo application, using Playwright wit
 ## Design Patterns
 
 
-- **Page Object Model **
+- **Page Object Model**
 - **Fluent Interface**
   
 
